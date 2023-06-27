@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>landing page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+      <!-- Title -->
+      <section id="title" class="gradient-background">
+        <div class="container col-xxl-8 px-4 pt-5">
+          <div class="row flex-lg-row-reverse align-items-center g-5 pt-5">
+            <div class="col-10 col-sm-8 col-lg-6 start-image">
+              <img
+                src="./resources/read-image.jpg"
+                class="d-block mx-lg-auto img-fluid"
+                alt="Bootstrap Themes"
+                loading="lazy"
+                height="200"
+              />
+            </div>
+            <div class="col-lg-6">
+              <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">
+                Get the best experience of reading 
+                books in digital world.
+              </h1>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                <button type="button" class="btn btn-light btn-lg px-4 me-md-2" onclick="openpage('loginn.html')">
+                  signin
+                </button>
+                <button type="button" class="btn btn-outline-light btn-lg px-4" onclick="openpage('registration.php')">
+                  signup
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+      </section>
+      <!-- Features -->
+      <section id="features">
+        <div class="px-4 py-5" id="hanging-icons">
+          <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="col d-flex align-items-start">
+              <div>
+                <h3 class="fs-2">Digital Resources.</h3>
+                <p>You can explore digital world here.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div>
+                <h3 class="fs-2">Group chat</h3>
+                <p>you can share and discuss in a group environment.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <div>
+                <h3 class="fs-2">Donate</h3>
+                <p>you can contribute to the system by donating your resources.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- carousel -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="./resources/ebookread.jpg" class=" container d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Ebooks</h2>
+              <p>Both free and paid books available</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./resources/journals.jpg" class=" container d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Journals</h2>
+              <p>Read and post your journals here.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./resources/newspaper.jpg" class="container d-block  w-100" alt="...">
+
+            <div class="carousel-caption d-none d-md-block">
+              <h2 style="color:black">Articles</h2>
+              <p style="color:black">Read and post your Articles here.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- Footer --> <section id="contact" class="gradient-background">
+    <div class="container ">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2023 E-Learning</span>
+        </div>
+      </footer>
+    </div>
+  </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function openpage(contentpath) {
+            window.open(contentpath, "_self");
+      }
+    </script>
+  </body>
+</html>
