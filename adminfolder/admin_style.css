@@ -1,0 +1,293 @@
+.gradient-background {
+   background: rgb(0, 36, 4);
+   background: linear-gradient(90deg, rgba(0, 36, 4, 1) 0%, rgba(9, 120, 121, 0.8071603641456583) 22%, rgba(80, 130, 215, 1) 75%, rgba(0, 212, 255, 1) 100%);
+}
+*{
+   font-family: "Times New Roman", Times, serif;
+}
+@keyframes gradient-animation {
+   0% {
+       background-position: 0% 50%;
+   }
+
+   50% {
+       background-position: 100% 50%;
+   }
+
+   100% {
+       background-position: 0% 50%;
+   }
+}
+
+
+:root{
+   --purple:#8e44ad;
+   --red:#c0392b;
+   --orange:#f39c12;
+   --black:#333;
+   --white:#fff;
+   --light-color:#666;
+   --light-white:#ccc;
+   --light-bg:#f5f5f5;
+   --border:.1rem solid var(--black);
+   --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+   font-family: sans-serif;
+   margin:0; padding:0;
+   box-sizing: border-box;
+   outline: none; border:none;
+   text-decoration: none;
+   transition:all .1s linear;
+}
+
+
+html{
+   font-size: 62.5%;
+   overflow-x: hidden;
+}
+
+
+
+section{
+   padding:3rem 2rem;
+}
+
+.title{
+   text-align: center;
+   margin-bottom: 2rem;
+   text-transform: uppercase;
+   color:var(--black);
+   font-size: 4rem;
+}
+
+.empty{
+   padding:1.5rem;
+   text-align: center;
+   border:var(--border);
+   background-color: var(--white);
+   color:var(--red);
+   font-size: 2rem;
+}
+
+.btn,
+.option-btn,
+.delete-btn,
+.white-btn{
+   display: inline-block;
+   margin-top: 1rem;
+   padding:1rem 3rem;
+   cursor: pointer;
+   color:var(--white);
+   font-size: 1.8rem;
+   border-radius: .5rem;
+   text-transform: capitalize;
+}
+
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover{
+   background-color: var(--black);
+   color:var(--light-white)
+}
+
+.white-btn,
+.btn{
+   background-color: var(--purple);
+}
+
+.option-btn{
+   background-color: var(--orange);
+}
+
+.delete-btn{
+   background-color: var(--red);
+}
+
+.white-btn:hover{
+   background-color: var(--white);
+   color:var(--black);
+}
+
+@keyframes fadeIn {
+   0%{
+      transform: translateY(1rem);
+      opacity: .2s;
+   }
+}
+
+
+.dashboard .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap:1.5rem;
+   max-width: 1200px;
+   margin:0 auto;
+   align-items: flex-start;
+}
+
+.dashboard .box-container .box{
+   border-radius: .5rem;
+   padding:2rem;
+   background-color: var(--white);
+   box-shadow: var(--box-shadow);
+   border:var(--border);
+   text-align: center;
+}
+
+.dashboard .box-container .box h3{
+   font-size: 5rem;
+   color:var(--black); 
+}
+
+.dashboard .box-container .box p{
+   margin-top: 1.5rem;
+   padding:1.5rem;
+   background-color: var(--light-bg);
+   color:var(--purple);
+   font-size: 2rem;
+   border-radius: .5rem;
+   border:var(--border);
+}
+
+.add-products form{
+   background-color: var(--white);
+   border-radius: .5rem;
+   padding:2rem;
+   text-align: center;
+   box-shadow: var(--box-shadow);
+   border:var(--border);
+   max-width: 50rem;
+   margin:0 auto;
+}
+
+.add-products form h3{
+   font-size: 2.5rem;
+   text-transform: uppercase;
+   color:var(--black);
+   margin-bottom: 1.5rem;
+}
+
+.add-products form .box{
+   width: 100%;
+   background-color: var(--light-bg);
+   border-radius: .5rem;
+   margin:1rem 0;
+   padding:1.2rem 1.4rem;
+   color:var(--black);
+   font-size: 1.8rem;
+   border:var(--border);
+}
+.add-products form .btn:hover{
+   color:var(--white);
+}
+.show-products .box-container{
+   display: grid;
+   grid-template-columns: repeat(auto-fit, 30rem);
+   justify-content: center;
+   gap:1.5rem;
+   max-width: 1200px;
+   margin:0 auto;
+   align-items: flex-start;
+}
+
+.show-products{
+   padding-top: 0;
+}
+
+.show-products .box-container .box {
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+   padding: 20px;
+   margin-bottom: 20px;
+   font-size: 1.5rem;
+   display: flex;
+   flex-direction: column;
+   height: 500px;
+ }
+ 
+ .show-products .box-container .box img {
+   max-width: 100%;
+   max-height: 150px;
+   margin-bottom: 10px;
+   object-fit: fill;
+ }
+ 
+ .show-products .box-container .box .name {
+   font-weight: bold;
+   margin-bottom: 5px;
+ }
+ 
+ .show-products .box-container .box .price {
+   font-size: 18px;
+   color: #ff6a00;
+   margin-top: 10px;
+ }
+ 
+ .show-products .box-container .box .option-btn,
+ .show-products .box-container .box .delete-btn {
+   display: inline-block;
+   padding: 5px 10px;
+   margin-top: 10px;
+   border: none;
+   border-radius: 4px;
+   font-size: 14px;
+   color: #fff;
+   background-color: #007bff;
+   cursor: pointer;
+ }
+ 
+/* added css  */
+.edit-product-form{
+   min-height: 100vh;
+   background-color: rgba(0,0,0,.7);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding:2rem;
+   overflow-y: scroll;
+   position: fixed;
+   top:0; left:0; 
+   z-index: 1200;
+   width: 100%;
+}
+
+.edit-product-form form{
+   width: 50rem;
+   padding:2rem;
+   text-align: center;
+   border-radius: .5rem;
+   background-color: var(--white);
+}
+
+.edit-product-form form img{
+   height: 25rem;
+   margin-bottom: 1rem;
+}
+
+.edit-product-form form .box{
+   margin:1rem 0;
+   padding:1.2rem 1.4rem;
+   border:var(--border);
+   border-radius: .5rem;
+   background-color: var(--light-bg);
+   font-size: 1.8rem;
+   color:var(--black);
+   width: 100%;
+}
+
+/* admin order style */
+/* table style */
+.tableContent{
+   font: 2rem sans-serif;
+}
+.pending {
+   background-color: yellow;
+   color:var(--black);
+}
+
+.success {
+   background-color: green;
+}
