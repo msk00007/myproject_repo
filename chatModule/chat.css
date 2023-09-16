@@ -1,0 +1,48 @@
+.message-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 400px; /* Set the maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .message {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 70%;
+  }
+
+  .message.sender {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+  }
+
+  .message.receiver {
+    background-color: #e8e8e8;
+    align-self: flex-start;
+  }
+
+  .reply-button {
+    cursor: pointer;
+    color: rgba(13, 13, 13, 0.477);
+    text-decoration: underline;
+  }
+
+  .sender-name {
+    font-weight: bold;
+  }
+
+  .reply-message {
+    margin-top: 5px;
+    margin-left: 15px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background-color: #f2f2f2;
+    max-width: 80%;
+  }
+
+  .delete-button {
+    cursor: pointer;
+    color: rgba(13, 13, 13, 0.477);
+    text-decoration: underline;
+  }
