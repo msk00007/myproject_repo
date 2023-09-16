@@ -1,0 +1,51 @@
+.cover {
+    padding: 0px 30px;
+    position: relative;
+    margin-top: 10px; 
+  }
+  .left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .right {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .scroll-images {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+  }
+  .child img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+.scroll-images::-webkit-scrollbar {
+        -webkit-appearance: none;
+     }  
+  
+  
+  .child {
+    min-width: 340px;
+    height: auto;
+    margin: 1px 10px;
+    overflow: hidden;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
