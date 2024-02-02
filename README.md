@@ -1,8 +1,7 @@
 # myproject_repo
 #updated code  uploads here
 
-![user details before verification](https://github.com/msk00007/myproject_repo/assets/109849322/0e02b1cd-293a-40eb-9337-edeacb04186e)
-![user details after verification](https://github.com/msk00007/myproject_repo/assets/109849322/3bdb5cae-f7bf-4f9d-a5f2-d6503234ca18)
+
 ![uploading details to donate](https://github.com/msk00007/myproject_repo/assets/109849322/0fcd32b2-3a9e-4e58-a251-446bd9bc95bc)
 ![uploaded successfully to donate](https://github.com/msk00007/myproject_repo/assets/109849322/2ac962a1-6dfd-4f9e-80c2-ab27ef97fbeb)
 ![signup](https://github.com/msk00007/myproject_repo/assets/109849322/3c67ce9b-5a6a-4d65-ac0c-ff9094b55b65)
